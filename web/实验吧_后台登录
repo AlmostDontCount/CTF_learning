@@ -1,0 +1,17 @@
+#实验吧
+##后台登录
+http://ctf5.shiyanbar.com/web/houtai/ffifdyop.php
+<!-- $password=$_POST['password'];
+	$sql = "SELECT * FROM admin WHERE username = 'admin' and password = '".md5($password,true)."'";
+	$result=mysqli_query($link,$sql);
+		if(mysqli_num_rows($result)>0){
+			echo 'flag is :'.$flag;
+		}
+		else{
+			echo '密码错误!';
+		} -->
+SELECT * FROM admin WHERE username = 'admin' and password = '".md5($password,true)."'
+SQLi can be done if we submit ffifdyop.
+Because when the second parameter of md5(,) is true, it returns a raw binary type which can be read as characters.
+If we input like ffifdyop, the sql request is SELECT * FROM admin WHERE username = 'admin' and password = ''or'<trash>'
+trash is a none-zero value , SQLi.
