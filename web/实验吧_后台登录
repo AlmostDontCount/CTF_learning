@@ -1,6 +1,6 @@
-#实验吧
-##后台登录
-http://ctf5.shiyanbar.com/web/houtai/ffifdyop.php
+# 实验吧
+## 后台登录
+address: http://ctf5.shiyanbar.com/web/houtai/ffifdyop.php
 <!-- $password=$_POST['password'];
 	$sql = "SELECT * FROM admin WHERE username = 'admin' and password = '".md5($password,true)."'";
 	$result=mysqli_query($link,$sql);
