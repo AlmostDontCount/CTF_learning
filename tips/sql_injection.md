@@ -7,6 +7,5 @@
 
 3.use Select column_name from information_schema.columns where table_name=’xxxxx’ to select all the columns of a table.  
 
-
 4. use select *** from ***;
 This can  work for DVWA Low level and OSWAP security shepherd.
