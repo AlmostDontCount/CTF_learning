@@ -8,7 +8,7 @@
 	**print 100 A**  
 	`$ python -c 'print "A"*100'`  
 	**When in bash-as an argument**  
-	`$ ./vulnerable \`your_command_here\``  
+	`$ ./vulnerable `your_command_here``  
 	`$ ./vulnerable $(your_command_here)`  
 	**When in bash as an input**   
 	`$ your_command_here | ./vulnerable`  
