@@ -1,5 +1,6 @@
 #SQL injection tips
 ##strings  
+database()  
 
 1.use select schema_name from information_schema.schemata to get all databases; or simply use select **,database() to get the current database().  
 
